@@ -38,6 +38,19 @@ let hello = "Hello worlds";
 console.log(hello.slice(1, 5));
 // the putput is ello becuase starting is slice 1 and end is 4 but we will end it up by adding 1
 
+// REPLACE METHOD
+
+let Str = "Fatima Gul";
+Str.replace("Fatima, Haseeba")
+
+// fatima will be replace by haseeba
+
+// REPEAT Method
+
+let fruit = "PineApple"
+fruit.repeat(4)
+
+// PineApple will repeat 4 times
 
 
 
