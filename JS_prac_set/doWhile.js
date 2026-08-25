@@ -3,7 +3,7 @@
 let teaCollection = [];
 let tea;
 do {
-    tea = prompt = ("Please enter your favourite tea!") 
+    tea = prompt(`Enter your fav teatype (type "stop!"to finish)`);
     
     if (tea !== "stop")
         teaCollection.push(tea);
