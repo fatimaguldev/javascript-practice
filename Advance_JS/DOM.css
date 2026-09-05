@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background:
+    linear-gradient(rgba(8, 8, 12, 0.92), rgba(8, 8, 12, 0.97)),
+    url("./DOMassets/spiderman_img.png") center/cover fixed;
+  color: #e8e8e8;
+  line-height: 1.7;
+  padding: 50px 20px;
+}
+
+/* Main content width */
+body > * {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #e50914;
+  margin-bottom: 30px;
+
+  text-shadow:
+    0 0 10px rgba(229, 9, 20, 0.35),
+    0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+
+#mainImg {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: 420px;
+  object-fit: cover;
+
+  margin: 0 auto 45px;
+
+  border-radius: 6px;
+
+  border: 1px solid #333;
+}
+
+
+
+h2 {
+  font-size: 2rem;
+  color: #ffffff;
+
+  margin-top: 45px;
+  margin-bottom: 18px;
+
+  padding-left: 15px;
+
+  border-left: 4px solid #e50914;
+
+  letter-spacing: 1px;
+}
+
+
+p {
+  color: #c8c8c8;
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+}
+
+b {
+  color: #ffffff;
+}
+
+a {
+  color: #e50914;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ff4b55;
+  text-decoration: underline;
+}
+
+
+.box {
+  background: rgba(20, 20, 24, 0.92);
+
+  border: 1px solid #333;
+  border-left: 4px solid #e50914;
+
+  padding: 25px 30px;
+  margin-top: 35px;
+
+  border-radius: 4px;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.box h4 {
+  font-size: 1.3rem;
+  color: #ffffff;
+
+  margin-bottom: 15px;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.box ul {
+  padding-left: 22px;
+}
+
+.box li {
+  margin: 8px 0;
+  color: #bdbdbd;
+}
+
+.boxLink {
+  color: #e50914;
+  font-weight: 600;
+}
+
+
+#description {
+  background: rgba(255, 255, 255, 0.035);
+
+  border: 1px solid #292929;
+
+  padding: 25px 30px;
+
+  border-radius: 5px;
+
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.25);
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+.oldImg {
+  width: 100%;
+  height: 250px;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+
+  border: 1px solid #333;
+
+  filter: grayscale(20%) contrast(1.05);
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.oldImg:hover {
+  transform: translateY(-6px);
+
+  filter: grayscale(0%) contrast(1.1);
+
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.65),
+    0 0 15px rgba(229, 9, 20, 0.15);
+}
+
+
+@media (max-width: 700px) {
+  body {
+    padding: 30px 15px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+  }
+
+  #mainImg {
+    height: 300px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .images {
+    grid-template-columns: 1fr;
+  }
+
+  .oldImg {
+    height: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+
+  #mainImg {
+    height: 250px;
+  }
+
+  .box,
+  #description {
+    padding: 20px;
+  }
+}
