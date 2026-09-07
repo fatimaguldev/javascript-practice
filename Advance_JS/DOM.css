@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.green {
+  color:green
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background:
@@ -42,11 +46,8 @@ h1 {
   max-width: 600px;
   height: 420px;
   object-fit: cover;
-
   margin: 0 auto 45px;
-
   border-radius: 6px;
-
   border: 1px solid #333;
 }
 
