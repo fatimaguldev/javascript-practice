@@ -30,7 +30,7 @@ let array = [
     marks: 98,
   },
   {
-    name: "abul",
+    name: "Abul Salam",
     marks: 97,
   },
   {
