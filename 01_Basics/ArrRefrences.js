@@ -1,4 +1,4 @@
-let arr = ['a', 'b', 'c', 'd'];
+let arr = ["a", "b", "c", "d"];
 
 let arrCopy = arr;
 arrCopy === arr;
