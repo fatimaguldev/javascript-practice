@@ -5,11 +5,14 @@ for (let i = 0; i < smallImages.length; i++) {
   console.log(`value of images no. ${i} is changed`);
 }
 
+
 console.dir(document.querySelector("h1"));
 
 console.dir(document.querySelector("p"));
 
 console.dir(document.querySelector("#description"));
+
+
 
 console.dir(document.querySelector("p")); //first paragraph
 
@@ -53,7 +56,11 @@ body.appendChild(newP); //append means add at the end
 let btn = document.createElement("button");
 btn.innerText = "Click me";
 
+
+
 // 2. Style the button (Optional: styling matches Spider-Man!)
+
+
 btn.style.backgroundColor = "#E62429"; // Marvel Red
 btn.style.color = "white";
 btn.style.padding = "10px 15px";
@@ -62,8 +69,13 @@ btn.style.borderRadius = "5px";
 btn.style.cursor = "pointer";
 btn.style.marginTop = "15px";
 
+
+
+
 // 3. Append it using your existing 'box' variable
 box.appendChild(btn);
+
+
 
 // 4. Make it do something when clicked
 btn.addEventListener("click", function() {
