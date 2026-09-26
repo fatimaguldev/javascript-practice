@@ -1,0 +1,1 @@
+// To access a web API in JavaScript, you send an HTTP request to a specific URL (called an endpoint). The modern and standard way to do this is by using the native fetch() API.Because network requests take time, fetch() operates asynchronously and returns a Promise.
